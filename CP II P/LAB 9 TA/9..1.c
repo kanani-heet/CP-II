@@ -1,0 +1,11 @@
+//Print value and address of a variable.
+#include <stdio.h>
+void main()
+{
+    int x = 10;
+    // printf("Value = %d, Address = %p\n", x,&x);
+
+    int *ptr;
+    ptr = &x;
+    printf("Value = %d, Address = %u\n", *ptr, ptr);
+}
